@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/perv.css" />
   </head>
   <body>
-    <img src="images/Ellipsis-1.3s-203px.gif" id="loader" alt="" />
+    <!-- <img src="images/Ellipsis-1.3s-203px.gif" id="loader" alt="" /> -->
     <div id="bod" style="display: none">
       <header>
         <!-- <img src="images/L B&W.png" alt="" id="logo" /> -->
@@ -33,12 +33,12 @@
           </svg>
         </label>
       </header>
-      <button
+      <!-- <button
         id="uparrow"
         onclick="window.scrollTo({top:0,behavior:'smooth'});"
       >
         <p>⬆</p>
-      </button>
+      </button> -->
       <div id="list">
         <a href="index.html">Home</a>
         <br />
@@ -144,23 +144,19 @@
       document.addEventListener("DOMContentLoaded", function (event) {
         let images = document.querySelectorAll(".imgs");
         let observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function(entry)
-          {
-            if(entry.isIntersecting)
-            {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
               entry.target.style.transform = "translateY(0px)";
               entry.target.style.opacity = 1;
-            }
-            else
-            {
+            } else {
               entry.target.style.transform = "translateY(70px)";
               entry.target.style.opacity = 0;
             }
-          })
+          });
         });
-        images.forEach(img => {
+        images.forEach((img) => {
           observer.observe(img);
-      });
+        });
       });
       setTimeout(function () {
         document.getElementById("loader").style.display = "none";
@@ -169,7 +165,6 @@
       setInterval(function () {
         if (window.scrollY > 0) {
           document.querySelector("header").style.backgroundColor = "black";
-          document.getElementById("uparrow").style.display = "block";
           let allnavi = document.querySelectorAll(".nav-items");
           allnavi.forEach(function (el) {
             el.style.color = "white";
@@ -178,7 +173,6 @@
         } else {
           document.querySelector("header").style.backgroundColor =
             "transparent";
-          document.getElementById("uparrow").style.display = "none";
           let allnavi = document.querySelectorAll(".nav-items");
           allnavi.forEach(function (el) {
             el.style.color = "black";
