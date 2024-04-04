@@ -12,7 +12,17 @@
   
   body {
     overflow-x: hidden;
-    background-color:rgb(18, 18, 18);;
+    background-color:white;
+  }
+  abbr {
+    color: rgb(108, 106, 106);
+  }
+  .footer {
+    scale: 1.5;
+    padding: 0.2rem 0.8rem;
+    color: black;
+    width: fit-content;
+    margin: auto;
   }
   header {
     position: fixed;
@@ -275,7 +285,7 @@
     #btn-list {
       display: block;
       width: fit-content;
-      margin-left: 70%;
+      margin-left: 90%;
     }
     #nav {
       display: none;
