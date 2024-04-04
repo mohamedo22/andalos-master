@@ -279,10 +279,33 @@
     ></script>
   </body>
   <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+      const images = document.querySelectorAll('.gallery__img');
+      let observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.style.opacity = 1;
+                  entry.target.style.transform = 'translateY(0)';
+              } else {
+                  entry.target.style.opacity = 0;
+                  entry.target.style.transform = 'translateY(70px)';
+              }
+          });
+      });
+
+      images.forEach(img => {
+          img.style.opacity = 0;
+          img.style.transform = 'translateY(70px)';
+          img.style.transition = 'opacity 1s, transform 1s';
+          observer.observe(img);
+      });
+  });
+
     let s = 0;
     setTimeout(function () {
       document.getElementById("loader").style.display = "none";
       document.getElementById("bod").style.display = "block";
+      
     }, 1500);
     setInterval(function () {
       if (window.scrollY > 100) {

@@ -391,6 +391,9 @@ abbr {
   font-size: 1.2rem;
   cursor: pointer;
 }
+.gallery__img {
+  transition: all 2s ease-in-out;
+}
 #des * {
   position: relative;
   z-index: 2;
@@ -555,6 +558,10 @@ abbr {
   #nav {
     display: none;
   }
+.gallery__img {
+  transition: opacity 2s ease-in-out;
+}
+
   .igcont img {
     width: 110vw;
     height: 32rem;
