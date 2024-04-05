@@ -68,7 +68,7 @@
               <!-- slide image wrap -->
               <div class="fashion-slider-scale">
                 <!-- slide image -->
-                <img src="images/AND05026.jpg" />
+                <img src="images/Slider/2.jpg" />
               </div>
             </div>
             <!-- configure slide color with "data-slide-bg-color" attribute -->
@@ -81,7 +81,7 @@
               <!-- slide image wrap -->
               <div class="fashion-slider-scale">
                 <!-- slide image -->
-                <img src="images/Slider/2.jpg" />
+                <img src="images/Slider/10.jpg" />
               </div>
             </div>
             <!-- configure slide color with "data-slide-bg-color" attribute -->
@@ -94,7 +94,7 @@
               <!-- slide image wrap -->
               <div class="fashion-slider-scale">
                 <!-- slide image -->
-                <img src="images/Slider/3.jpg" />
+                <img src="images/Slider/7.jpg" />
               </div>
             </div>
             <div class="swiper-slide" data-slide-bg-color="#9FA051">
@@ -106,7 +106,7 @@
               <!-- slide image wrap -->
               <div class="fashion-slider-scale">
                 <!-- slide image -->
-                <img src="images/Slider/4.jpg" />
+                <img id="image_bdan" src="images/Slider/46.jpg" />
               </div>
             </div>
             <div class="swiper-slide" data-slide-bg-color="#9FA051">
@@ -118,7 +118,7 @@
               <!-- slide image wrap -->
               <div class="fashion-slider-scale">
                 <!-- slide image -->
-                <img src="images/AND07620.jpg" />
+                <img src="images/Slider/21.jpg" />
               </div>
             </div>
           </div>
@@ -247,9 +247,9 @@
         </div>
       </div>
     </div>
-    <button id="uparrow" onclick="window.scrollTo({top:0,behavior:'smooth'});">
+    <!-- <button id="uparrow" onclick="window.scrollTo({top:0,behavior:'smooth'});">
       <p>⬆</p>
-    </button>
+    </button> -->
     <a
       id="insta_link"
       href="https://www.instagram.com/andlos_photography?igsh=MXUycjlxdmlodjRwZA=="
@@ -264,9 +264,9 @@
         <p>Instgram</p>
       </div>
     </a>
-    <div class="footer">
+    <!-- <div class="footer">
       Developed By <abbr title="Mohamed Osama Abdelhady"> Mohamed O. </abbr>
-    </div>
+    </div> -->
     <script
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js"
@@ -297,14 +297,9 @@
     });
 
     let s = 0;
-    setTimeout(function () {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("bod").style.display = "block";
-    }, 1500);
     setInterval(function () {
       if (window.scrollY > 100) {
         document.querySelector("header").style.backgroundColor = "black";
-        document.getElementById("uparrow").style.display = "block";
         let allnavi = document.querySelectorAll(".nav-items");
         allnavi.forEach(function (el) {
           el.style.color = "white";
@@ -312,7 +307,6 @@
         document.getElementById("svg").style.fill = "white";
       } else {
         document.querySelector("header").style.backgroundColor = "transparent";
-        document.getElementById("uparrow").style.display = "none";
         let allnavi = document.querySelectorAll(".nav-items");
         allnavi.forEach(function (el) {
           el.style.color = "black";

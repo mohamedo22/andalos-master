@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- <img src="images/Ellipsis-1.3s-203px.gif" id="loader" alt="" /> -->
-    <div id="bod" style="display: none">
+    <div id="bod" style="display: block">
       <header>
         <!-- <img src="images/L B&W.png" alt="" id="logo" /> -->
         <ul id="nav">
@@ -135,9 +135,9 @@
         <img src="Photos/82.jpg" class="imgs span" alt="" />
         <img src="Photos/83.png" class="imgs" alt="" />
       </div>
-      <div class="footer">
+      <!-- <div class="footer">
         Developed By <abbr title="Mohamed Osama Abdelhady"> Mohamed O. </abbr>
-      </div>
+      </div> -->
     </div>
     <script>
       let cont_i = document.getElementById("cont_img");
@@ -158,10 +158,6 @@
           observer.observe(img);
         });
       });
-      setTimeout(function () {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("bod").style.display = "block";
-      }, 1500);
       setInterval(function () {
         if (window.scrollY > 0) {
           document.querySelector("header").style.backgroundColor = "black";

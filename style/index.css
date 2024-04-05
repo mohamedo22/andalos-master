@@ -372,9 +372,6 @@ abbr {
 #insta-svg {
   width: 5rem;
 }
-.fashion-slider-title-text {
-  font-size: 3rem;
-}
 #uparrow {
   width: fit-content;
   background-color: black;
@@ -391,6 +388,10 @@ abbr {
   font-size: 1.2rem;
   cursor: pointer;
 }
+#image_bdan {
+  scale: 1 !important;
+  width: 50vw !important;
+}
 .gallery__img {
   transition: all 2s ease-in-out;
 }
@@ -399,6 +400,10 @@ abbr {
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
+  #image_bdan {
+    scale: 1 !important;
+    width: fit-content !important;
+  }
   .container {
     width: 100%;
     display: flex;
@@ -433,7 +438,6 @@ abbr {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    margin-top: -3.5rem;
   }
 
   .gallery__item--4 {
@@ -441,7 +445,6 @@ abbr {
     grid-column-end: 3;
     grid-row-start: 11;
     grid-row-end: 15;
-    margin-top: -5rem;
   }
 
   .gallery__item--5 {
@@ -449,6 +452,8 @@ abbr {
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 7;
+    justify-self: center;
+    align-self: center;
   }
 
   .gallery__item--6 {
@@ -456,6 +461,8 @@ abbr {
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 7;
+    justify-self: center;
+    align-self: center;
   }
   .gallery__item--7 {
     display: none;
@@ -484,7 +491,6 @@ abbr {
     grid-column-end: 5;
     grid-row-start: 7;
     grid-row-end: 9;
-    margin-top: -8rem;
   }
 
   .gallery__item--12 {
@@ -492,15 +498,13 @@ abbr {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 7;
-    margin-top: -8rem;
   }
 
   .gallery__item--13 {
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 10;
+    grid-row-start: 12;
     grid-row-end: 13;
-    margin-top: 20rem;
   }
 
   .gallery__item--14 {
@@ -558,9 +562,9 @@ abbr {
   #nav {
     display: none;
   }
-.gallery__img {
-  transition: opacity 2s ease-in-out;
-}
+  .gallery__img {
+    transition: opacity 2s ease-in-out;
+  }
 
   .igcont img {
     width: 110vw;
