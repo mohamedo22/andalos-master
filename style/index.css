@@ -445,6 +445,7 @@ abbr {
     grid-column-end: 3;
     grid-row-start: 11;
     grid-row-end: 15;
+    visibility: hidden;
   }
 
   .gallery__item--5 {
@@ -505,6 +506,7 @@ abbr {
     grid-column-end: 5;
     grid-row-start: 12;
     grid-row-end: 13;
+    visibility: hidden;
   }
 
   .gallery__item--14 {
